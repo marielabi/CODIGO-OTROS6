@@ -1,0 +1,35 @@
+BIANCA MARIELA GONZALEZ HERNÁNDEZ
+
+package codigo6;
+import java.util.Scanner; // hay que importar esto
+
+public class codigo6 {
+	public static void main(String[] args) { // agregar public static void main....
+		  
+	    int[] n = int[20];
+
+	    for (int i = 0; i < 20; i++) { // para incremento de uno en uno poner ++
+	      n[i] = (int)(Math.random() * 381) + 20;
+	      System.out.print(n[i] + " "); // poner "out" en system.out.print
+	    }
+	    
+	    System.out.println("\n¿Qué números quiere resaltar? "); // necesario pone ln
+	    System.out.print("(1 – los múltiplos de 5, 2 – los múltiplos de 7): ");
+	    int opcion = Integer.parseInt(System.console().readLine()); //  faltaba un parentesis
+
+	    int multiplo = (opcion == 1)  5 ? 7; // borrar los dos puntitos entre el ) y 5 ?
+
+	    foreach (char e : n) {
+	      if (e % multiplo == 0) {
+	        System.out.print("[" + e + "] ");
+	      } else { // faltaba el }
+	        System.in.print(e + " ");
+	      }
+	    }
+	  
+	}
+	
+
+}
+
+}
